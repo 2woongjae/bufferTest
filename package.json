@@ -1,0 +1,16 @@
+{
+  "name": "bufferTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "enclose": "enclose -a x64 -o bin/.server server/main.js",
+    "start": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "enclose": "^2.2.0"
+  }
+}
