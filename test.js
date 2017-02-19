@@ -8,7 +8,8 @@ const executable = path.join(__dirname, 'bin/.server');
 const args = [];
 const options = {};
 
-options.stdio = ['pipe', 'pipe', 'pipe'];
+options.stdio = ['inherit', 'inherit', 'inherit'];
+// options.stdio = ['pipe', 'pipe', 'pipe'];
 // options.stdio = ['ignore', 'ignore', 'ignore'];
 
 const server = cp.spawn(executable, args, options);
